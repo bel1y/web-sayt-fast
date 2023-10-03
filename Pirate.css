@@ -6,35 +6,9 @@
 }
 .Img_Pirate_Junker img{
     width: 27vw;
-    margin-left: 15%;
+    margin-left: 12%;
 }
 
-.fa-heart-o{
-    font-size: 10vw;
-}
-.df_text_about{
-    width: 20vw;
-    color: rgb(32, 129, 226);
-}
-.df_text_about p{
-    font-size: 1.8vw; 
-}
-.df_text_about img{
-width: 10%;
-}
-.Pirate_big_div{
-    display: flex;
-    align-items: start;
-    gap: 10px;
-    margin-top: 50px;
-    width: 96%;
-    margin-left: 2%;
-}
-.df_text_about{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .df_icons1{
     display: flex;
@@ -45,9 +19,11 @@ width: 10%;
         display: flex;
         align-items: center;
         gap: 8px;
+        font-family: “Euclid”, sans-serif
 }
 .df_icons1 p{
     color: rgb(32, 129, 226);
+    font-family: “Euclid”, sans-serif
 }
 
 .df_icons{
@@ -75,6 +51,7 @@ width: 10%;
 
 .div_info p {
     z-index: 999;
+    font-family: “Euclid”, sans-serif
 }
 
 .div_ratate{
@@ -88,31 +65,492 @@ width: 10%;
 }
 
 .div_info2{
-    width: 180px;
-    height: 40px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+    width: 170px;
+    height: 40px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(199, 199, 199);
     position: absolute;
-    margin-top: -55px;
-    margin-left: -80px;
-    /* display: none; */
+    margin-top: -95px;
+    margin-left: -78px;
+}
+
+.div_rotate2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(135deg);
+    margin-top: 15px;
+    background-color: #fff;
 }
 
 .div_info2 p{
-color: #000;
-z-index: 999;
+    color: #000;
+    z-index: 999;
 }
 
-.div_ratate2{
+.div_info3{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    position: absolute;
+    margin-top: -95px;
+    margin-left: -17px;
+}
+
+.div_rotate3{
     width: 30px;
     height: 30px;
-    transform: rotate( 135deg);
-    margin-top:  25px;
-    margin-left: -50px;
     position: absolute;
-   background-color: #000;
+    transform: rotate(135deg);
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+.div_info3  p{
+    color: #000;
+    z-index: 999;
+}
+
+.df_text_about{
+    width: 20vw;
+    color: rgb(32, 129, 226);
+    font-family: “Euclid”, sans-serif
+}
+.df_text_about p{
+    font-size: 1.3vw; 
+    cursor: pointer;
+}
+.df_text_about p:hover{
+    color: rgb(25, 93, 161);
+}
+.df_text_about img{
+width: 8%;
+}
+.Pirate_big_div{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    margin-top: 50px;
+    width: 96%;
+    margin-left: 2%;
+}
+.df_text_about{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.df_icon_about{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fa-handshake{
+    color: rgb(189, 189, 189);
+}
+
+.share_info_div{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    margin-top: -90px;
+    margin-left: 18px;
+}
+
+.div_ratate_share{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(135deg);
+    margin-top: 20px;
+    position: absolute;
+}
+
+.share_info_div p{
+    z-index: 999;
+    font-family: “Euclid”, sans-serif
+}
+
+.more_info_div{
+    display: none;
+    align-items: center;
+    justify-content: center;    
+    width: 100px;
+    height: 40px;
+    margin-top: -90px;
+    margin-left: 60px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+}
+
+.div_rotate_more{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(135deg);
+    margin-top: 20px;
+    position: absolute;
+}
+
+.more_info_div p{
+    z-index: 999;
+    font-family: “Euclid”, sans-serif
+}
+
+.handshake_info_div{
+    width: 300px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    margin-top: -100px;
+    margin-left: -180px;
+}
+
+.div_rotate_handshake{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fff;
+    transform: rotate(135deg);
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.handshake_info_div p{
+    z-index: 999;
+    font-family: “Euclid”, sans-serif
+}
+
+.df_icons_and_text{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 50vw;
+}
+.df_icons_and_text1{
+    display: none;
+    align-items: start;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.big_text_about_div h2{
+     font-size: 2.5vw;
+     margin-top: -0px;
+     font-family: “Euclid”, sans-serif
+}
+.big_text_about_div1 h1{
+    font-size: 35px;
+    margin-top: -0px;
+    font-family: “Euclid”, sans-serif
+}
+
+.df_info_about_think{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42vw;
+}
+.icon_div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.icon_div p{
+    color: rgb(129, 129, 129);
+    font-size: 1vw;
+        font-family: “Euclid”, sans-serif
+}
+
+.div_for_info{
+    width: 120px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: -90px;
+    margin-left: -10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+
+}
+.div_for_info p{
+    color: #000;
+    z-index: 999;
+}
+.div_for_rotate{
+    width: 30px;
+    height: 30px;
+    transform: rotate(135deg);
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.div_for_info2 {
+    width: 120px;
+    display: none   ;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: -90px;
+    margin-left: -10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+
+}
+.div_for_info2 p{
+    color: #000;
+    z-index: 999;
+}
+.div_for_rotate2{
+    width: 30px;
+    height: 30px;
+    transform: rotate(135deg);
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.df_info_about_think1{
+display: none;
+}
+@media (max-width:900px) {
+    .df_icons_and_text1{display: flex; width: 100%;}
+    .df_icons_and_text{display: none;}
+    .Pirate_big_div{display: block;}
+    .for_mediya_top_text{width: 100%;}
+    .Img_div_Pirate_Junker{width: 100%;}
+    .Img_Pirate_Junker img{width: 70vw;margin-left: 12%;}
+    .df_text_about p{font-size: 2.5vw;}
+    .df_text_about img{width: 2.5vw;}
+    .df_text_about{width: 30vw;}
+    .df_info_about_think{ margin-top: 20px; width: 100%; flex-wrap: wrap;}
+    .icon_div p{font-size: 2.5vw}
+    .icon_div i{font-size: 2.5vw;}
+    .icon_div{ gap: 5px; width: 150px;}
+    .df_info_about_think1{display: flex; flex-wrap: wrap;}
+    .about_things_div{display: none;}
+    .df_icon_about{gap: 30px; }
+}
+@media (max-width:484px) {
+    .icon_div p{font-size: 3vw}
+    .icon_div i{font-size: 3vw;}
+    .icon_div{ gap: 5px; width: 100px;}
+}
+@media (max-width:400px) {
+    .df_info_about_think{ width: 100%; flex-wrap: wrap;}
+    .icon_div p{font-size: 2.5vw}
+    .icon_div i{font-size: 2.5vw;}
+    .icon_div{ gap: 5px; }
+    .df_text_about p{font-size: 3vw;}
+}
+
+.favorite_open{
+    background: #000000ab;
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    z-index: 100000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+.close_and_text_favorite{
+text-align: center;
+}
+
+
+/* .about_akk_div{
+    width: 30vw;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    margin-top: 300px;   
+    margin-left: -100px;
+}
+
+.df_username_check{
+    display: flex;
+    color: black;
+    font-size: 1vw;
+    width: 80vw;
+}
+.df_username_check p:hover{
+    color: black;
+}
+.df_about_akk_div{
+    display: flex;
+    align-items: center;
+}
+.df_username_check img{
+    
+}
+.df_about_akk_div_img img{
+    width: 100%;
+}
+.df_about_akk_div_img {
+    width: 20vw;
+} */
+
+
+
+
+.text_info_prime p{
+    font-size: 1vw;
+    color: rgb(129, 129, 129);
+    font-family: “Euclid”, sans-serif
+}
+.text_info_prime h2{
+    margin-top: -0px;
+    font-size: 2.5vw;
+    font-family: “Euclid”, sans-serif
+}
+.text_info_prime span{
+    font-size: 1vw;
+    color: rgb(129, 129, 129);
+    font-family: “Euclid”, sans-serif
+}
+.buy_prime_game{
+    border-radius: 10px;
+    border: 1px solid rgba(218, 218, 218, 0.856);
+    margin-top: 20px;
+}
+.info_and_price_div{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#checkbox{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(218, 218, 218, 0.856);
+    border-radius: 50px ;
+}
+.fa-circle-question{
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+.inp_div_checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: -20px;
+}
+
+.div_info_about_prime{
+    width: 25vw;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    position: absolute;
+    margin-top: -150px;
+    display: none;
+}
+.div_info_about_prime p{
+    font-size: 1.3vw;
+    color: #000 !important;
+    margin-left: 15px;
+    margin-right: 15px; 
+    font-family: “Euclid”, sans-serif ;
+    position: relative;
+    z-index: 999;
+}
+.div_info_about_prime_rotate{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 145px;
+}
+
+.number_plus_minus_div_price{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid rgba(218, 218, 218, 0.856);
+    border-radius: 15px;
+    width: 11vw;
+    height: 50px;
+    font-family: “Euclid”, sans-serif ;
+}
+.p_minus_kiladi{
+    font-size: 1vw;
+    color: rgb(129, 129, 129);
+}
+
+.p_chikadi_plus_bosilganda{
+    display: none;  
+}
+
+
+.button_to_buy_price{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.but_number_1{
+    font-family: “Euclid”, sans-serif ;
+    width: 50%;    
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5vw;
+    background-color: rgb(32, 129, 226);
+}
+.but_number_1:hover{
+    background-color: rgb(46, 146, 245);
+}
+.but_number_2{
+    font-family: “Euclid”, sans-serif ;
+    width: 48%;    
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+.but_number_2:hover{
+    background-color: #d8d8d8;
 }
