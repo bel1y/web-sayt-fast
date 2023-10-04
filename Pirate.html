@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Pirate.css">
+    <!-- fontawesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 <body>
     <div class="Pirate_big_div">
@@ -89,7 +94,16 @@
                 <i class="fa-solid fa-gamepad"></i>
                 <p>Gaming</p>
                </div>
-    </div>     
+    </div>    
+    
+      <div class="favorite_open">
+    <div class="small_div_favoriye">
+        <div class="close_and_text_favorite">
+            Connect your wallet
+            <i class="fa-solid fa-x"></i>
+        </div>
+    </div>
+  </div>
         </div>
      
     <div class="about_things_div">
@@ -169,11 +183,14 @@
         <div class="buy_prime_game">
             <div class="info_and_price_div">
                 <div class="text_info_prime">
-                    <p>Current price <span></span></p>
-                    <h2>0,145 PRIME <span>$0,52</span></h2>
-                    <p class="p_chikadi_plus_bosilganda" style="">Average item price: 0,145 PRIME</p>
+                    <p class="max-price">Max price </p>
+                    <p class="current-price">Current price </p> 
+                    <h2 class="inp_chang_max_price">1,5 PRIME <span>$5,21</span></h2>
+                    <h2 class="inp_chang_current_price">0,145 PRIME <span>$0,52</span></h2>
+                   
+                    <p class="p_chikadi_plus_bosilganda" >Average item price: 0,145 PRIME</p>
                   <div class="inp_div_checkbox">
-                     <input type="checkbox" id="checkbox"> 
+                     <input type="checkbox" id="checkbox" onchange="inpchange()" > 
                      <p>Substitute listings</p>
                      <p>
                         <div class="div_info_about_prime">
@@ -184,6 +201,14 @@
                      </p>
                      
                   </div> 
+                  <div class="change_max_price">
+                    <p>Max price per listing</p>
+                    <div class="div_for_inp_price">
+                   <input  type="text" name="" id="inp_for_prime">    
+                   PRIME 
+                    </div>
+                    
+                  </div>
                 </div>
                 <div class="number_plus_minus_div_price">
                     <p class="p_minus_kiladi"><i class="fa-solid fa-minus"></i></p>
@@ -196,16 +221,56 @@
                 <button class="but_number_2">Make offer</button>
             </div>
         </div>
+
+        
+ 
+<div id="accordion-resizer" class="ui-widget-content">
+  <div id="accordion">
+    <h3 class="for_top_class1"><i class="fa-solid fa-chart-line"></i> Price History</h3>
+    <div>
+      <p></p>
     </div>
-    </div>
-  <!-- <div class="favorite_open">
-    <div class="small_div_favoriye">
-        <div class="close_and_text_favorite">
-            Connect your wallet
-            <i class="fa-solid fa-x"></i>
+    <h3 class="for_top_class">Listings</h3>
+    <div class="accordionside1">
+     <div class="div_position_fixed">
+
+
+        <div class="kichik_nav_in_acc">
+        <p>Unit Price</p>
+        <p>USD Unit Price</p>
+        <p>Quantity</p>
+        <p>Expiration</p>
+        <p>From</p> 
         </div>
+       <hr>
+       <div class="kotta_acc_div_df">
+         <div class="df_info_in_acc">
+        <p class="text_in_acc">0,144 PRIME</p>
+        <p class="text_in_acc1">$0,50</p>
+        <p class="text_in_acc2">7</p>
+        <p class="text_in_acc3">in 6 days</p>
+        <p class="text_in_acc4">816375</p>
     </div>
-  </div> -->
+    <div class="basket_in_acc">
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+       </div>
+      
+     </div>
+    </div>
+    <h3 class="for_top_class"><i class="fa-solid fa-list"></i> Offers</h3>
+    <div class="accordionside">
+      <div class="if_no_offers">
+        <img src="./empty-bids.svg" alt="">
+        <p>No offers yet</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+
+
 
     <script>
 
@@ -275,6 +340,19 @@
     </script>
 
     <script>
+
+        function inpchange() {
+            document.querySelector(".max-price").style="display:block"
+            document.querySelector(".inp_chang_max_price").style="display:block"
+            document.querySelector(".inp_chang_current_price").style="display:none"
+            document.querySelector(".current-price").style="display:none"
+
+            document.querySelector(".change_max_price").style="    display: flex;"
+
+            document.querySelector("#inp_for_prime").value="1.5"
+        }
+
+
         function OpenWhenPOnclick() {
             document.querySelector(".p_chikadi_plus_bosilganda").style="display: block; margin-top: -15px "
             document.querySelector(".inp_div_checkbox").style="margin-top: 0px"
@@ -292,5 +370,26 @@
             document.querySelector(".div_info_about_prime").style="display:none"
         }
     </script>
+
+
+<!-- jquery -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#accordion" ).accordion({
+    heightStyle: "fill"
+  });
+
+  $( "#accordion-resizer" ).resizable({
+    minHeight: 140,
+    minWidth: 200,
+    resize: function() {
+      $( "#accordion" ).accordion( "refresh" );
+    }
+  });
+} );
+</script>
 </body>
 </html>

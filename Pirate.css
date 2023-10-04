@@ -22,7 +22,7 @@
         font-family: “Euclid”, sans-serif
 }
 .df_icons1 p{
-    color: rgb(32, 129, 226);
+    color: #2081e2;
     font-family: “Euclid”, sans-serif
 }
 
@@ -122,7 +122,7 @@
 
 .df_text_about{
     width: 20vw;
-    color: rgb(32, 129, 226);
+    color: #2081e2;
     font-family: “Euclid”, sans-serif
 }
 .df_text_about p{
@@ -279,7 +279,7 @@ width: 8%;
     cursor: pointer;
 }
 .icon_div p{
-    color: rgb(129, 129, 129);
+    color: #545454;
     font-size: 1vw;
         font-family: “Euclid”, sans-serif
 }
@@ -427,9 +427,18 @@ text-align: center;
 
 .text_info_prime p{
     font-size: 1vw;
-    color: rgb(129, 129, 129);
+    color: #545454  ;
     font-family: “Euclid”, sans-serif
 }
+
+.max-price{
+    display: none;
+}
+
+.inp_chang_max_price{
+   display: none; 
+}
+
 .text_info_prime h2{
     margin-top: -0px;
     font-size: 2.5vw;
@@ -437,7 +446,7 @@ text-align: center;
 }
 .text_info_prime span{
     font-size: 1vw;
-    color: rgb(129, 129, 129);
+    color: #545454;
     font-family: “Euclid”, sans-serif
 }
 .buy_prime_game{
@@ -454,13 +463,13 @@ text-align: center;
 }
 
 #checkbox{
-    width: 25px;
-    height: 25px;
-    border: 1px solid rgba(218, 218, 218, 0.856);
+    width: 3vw;
+    height: 3vh ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px ;
 }
 .fa-circle-question{
-    color: rgb(129, 129, 129);
+    color: #545454;
     cursor: pointer;
 }
 .inp_div_checkbox{
@@ -513,7 +522,7 @@ text-align: center;
 }
 .p_minus_kiladi{
     font-size: 1vw;
-    color: rgb(129, 129, 129);
+    color: #545454;
 }
 
 .p_chikadi_plus_bosilganda{
@@ -538,7 +547,7 @@ text-align: center;
     border-radius: 10px;
     color: #fff;
     font-size: 1.5vw;
-    background-color: rgb(32, 129, 226);
+    background-color: #2081e2;
 }
 .but_number_1:hover{
     background-color: rgb(46, 146, 245);
@@ -553,4 +562,144 @@ text-align: center;
 }
 .but_number_2:hover{
     background-color: #d8d8d8;
+}
+
+.div_for_inp_price{
+    width: 10vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(218, 218, 218, 0.856);
+    border-radius: 10px;
+    font-family: “Euclid”, sans-serif ;
+    color: #151515 ;
+}
+#inp_for_prime {
+    font-size: 1.5vw;
+    width: 5vw;
+    margin-left: 3px;
+    outline: none;
+    border: none;
+    color:#151515 ;
+    font-family: “Euclid”, sans-serif ;
+}
+.change_max_price{
+    gap: 5px;
+    align-items: center;
+    display: none;
+}
+
+
+
+
+#accordion-resizer {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  #accordion{
+    margin-top: 20px;
+  }
+
+  .for_top_class{
+    font-size: 1.5vw !important;
+    margin-top: 20px !important;
+    height: 50px !important;
+    display: flex !important;
+    gap: 5px;
+    align-items: center !important;
+    border: 1px solid #d8d8d8 !important;
+    background-color: #fff !important;
+    color: #121212 !important;
+    font-family: “Euclid”, sans-serif !important;
+  }
+  .for_top_class1{
+    font-size: 1.5vw !important;
+    height: 50px !important;
+    display: flex !important;
+    gap: 10px;
+    align-items: center !important;
+    border: 1px solid #d8d8d8 !important;
+    background-color: #fff !important;
+    color: #121212 !important;
+    font-family: “Euclid”, sans-serif !important;
+  }
+
+
+  .accordionside{
+    min-height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .accordionside1{
+    min-height: 300px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .if_no_offers{
+    text-align: center;
+    font-family: “Euclid”, sans-serif !important;
+    color: #121212;
+  }
+  .if_no_offers img{
+    width: 10vw;
+  }
+  .kichik_nav_in_acc p{
+    
+  }
+  .kichik_nav_in_acc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    width: 35vw !important;
+    height: 30px;
+    position: sticky;
+    /* margin-top: -160px; */
+    font-size: 1.1vw;
+  }
+  .div_position_fixed hr{
+    background-color: #d8d8d8;
+    border: none;
+    height: 1px;
+    width: 111%;
+    margin-left: -35px;
+  }
+  .div_position_fixed{
+    width: 100%;    
+  }
+  .df_info_in_acc{
+    display: flex;
+    width: 37vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text_in_acc{
+    font-weight: 600 ;
+  }
+  .text_in_acc4{
+    color: #2081e2;
+  }
+
+  .text_in_acc4:hover{
+    color: rgb(25, 93, 161);
+  }
+
+.kotta_acc_div_df{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basket_in_acc button{
+    color: #fff;
+    border: none;
+    width: 3.5vw;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2081e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
