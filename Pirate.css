@@ -1,3 +1,7 @@
+body{
+    margin: 0px !important;
+}
+
 .Img_div_Pirate_Junker{
     width: 40vw;
     border: 1px solid rgba(218, 218, 218, 0.856);
@@ -139,7 +143,6 @@ width: 8%;
     display: flex;
     align-items: start;
     gap: 30px;
-    margin-top: 50px;
     width: 96%;
     margin-left: 2%;
 }
@@ -599,10 +602,13 @@ text-align: center;
     border: none;
   }
   #accordion{
-    margin-top: 20px;
+    margin-top: 20px;   
   }
 
   .for_top_class{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
     font-size: 1.5vw !important;
     margin-top: 20px !important;
     height: 50px !important;
@@ -615,6 +621,9 @@ text-align: center;
     font-family: “Euclid”, sans-serif !important;
   }
   .for_top_class1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.5vw !important;
     height: 50px !important;
     display: flex !important;
@@ -647,18 +656,23 @@ text-align: center;
   .if_no_offers img{
     width: 10vw;
   }
-  .kichik_nav_in_acc p{
-    
-  }
-  .kichik_nav_in_acc{
+  .df_bolib_turishi_uchun{
     display: flex;
     align-items: center;
     justify-content: space-between !important;
-    width: 35vw !important;
-    height: 30px;
+    width: 35vw;
+}
+  .kichik_nav_in_acc{
+    
+    width: 100% !important;
+    height: 50px;
     position: sticky;
-    /* margin-top: -160px; */
+    top: -16.5px;
     font-size: 1.1vw;
+    z-index: 9999;
+    background-color: #fff;
+      border-bottom: 1px solid rgb(199, 199, 199);
+      margin-bottom: 80px;
   }
   .div_position_fixed hr{
     background-color: #d8d8d8;
@@ -672,15 +686,20 @@ text-align: center;
   }
   .df_info_in_acc{
     display: flex;
-    width: 37vw;
+    width: 37vw !important;
     align-items: center;
     justify-content: space-between;
   }
   .text_in_acc{
-    font-weight: 600 ;
+        font-weight: 600 ;
+  }
+  .text_in_acc, .text_in_acc1, .text_in_acc2, 
+  .text_in_acc3, .text_in_acc4{
+    font-size: 1.1vw;
   }
   .text_in_acc4{
     color: #2081e2;
+    cursor: pointer;
   }
 
   .text_in_acc4:hover{
@@ -691,15 +710,178 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgb(199, 199, 199);
 }
 .basket_in_acc button{
     color: #fff;
     border: none;
-    width: 3.5vw;
-    height: 40px;
+    width: 2.5vw;
+    height: 30px;
     border-radius: 10px;
     background-color: #2081e2;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1vw !important;
+}
+
+
+.description_div{
+    border: 1px solid #d8d8d8 !important;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.description_text_div{
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 1.5vw;
+}
+.fa-bars{
+    margin-left: 30px;
+}
+
+.description_about_text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 0px;
+    margin-top: 30px;
+}
+.description_about_text img{
+    width: 1.3vw;
+}
+.description_about_text span{
+    color: #8a939b;
+    font-family: “Euclid”, sans-serif ;
+    font-size: 1.3vw;
+}
+.description_about_text p{
+    font-size: 1.3vw;
+    font-family: “Euclid”, sans-serif ;
+}
+.description_about{
+    margin-left: 30px;
+}
+
+.description_about_text2 p{
+    color: #121212;
+    font-family: “Euclid”, sans-serif ;
+    font-size: 1vw;
+    margin-bottom: 30px;
+}
+
+
+.ui-accordion-header-icon {
+    display: none !important;
+}
+
+
+#MyChart{
+    width: 45vw !important;
+    height: 300px !important;
+}
+
+.view_all_owners{
+    width: 100vw;
+    height: 100vh !important;
+    background-color: #000000dc;
+    position: fixed;
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_all_owners{
+    width: 40vw;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.otmenit_owners{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    align-items: center;
+    font-size: 2vw;
+    font-family: “Euclid”, sans-serif
+}
+
+.logo_user{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: aqua;
+}
+
+.df_logo_and_nickname{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.nickname_user span{
+    color: #8a939b;
+    font-family: “Euclid”, sans-serif;
+    font-size: 1vw;
+}
+
+.nickname_user p{
+    color: #000;
+    font-family: “Euclid”, sans-serif;
+    line-height: 0px;
+    font-size: 1.3vw;
+}
+.all_users{
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.first_user{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
+    height: 80px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.second_user{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
+    height: 80px;
+}
+
+.second_user:hover{
+    background-color: #f7f7f7;
+}
+.first_user:hover{
+    background-color: #f7f7f7;
+}
+
+.items_view p{
+    color: #8a939b;
+}
+.items_view{
+    margin-right: 15px;
 }
