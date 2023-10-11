@@ -145,6 +145,7 @@ width: 8%;
     gap: 30px;
     width: 96%;
     margin-left: 2%;
+    margin-top: 50px;
 }
 .df_text_about{
     display: flex;
@@ -355,7 +356,7 @@ display: none;
     .df_text_about img{width: 2.5vw;}
     .df_text_about{width: 30vw;}
     .df_info_about_think{ margin-top: 20px; width: 100%; flex-wrap: wrap;}
-    .icon_div p{font-size: 2.5vw}
+    .icon_div p{font-size: 2vw}
     .icon_div i{font-size: 2.5vw;}
     .icon_div{ gap: 5px; width: 150px;}
     .df_info_about_think1{display: flex; flex-wrap: wrap;}
@@ -391,39 +392,7 @@ text-align: center;
 }
 
 
-/* .about_akk_div{
-    width: 30vw;
-    height: 250px;
-    background-color: #fff;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(199, 199, 199);
-    margin-top: 300px;   
-    margin-left: -100px;
-}
 
-.df_username_check{
-    display: flex;
-    color: black;
-    font-size: 1vw;
-    width: 80vw;
-}
-.df_username_check p:hover{
-    color: black;
-}
-.df_about_akk_div{
-    display: flex;
-    align-items: center;
-}
-.df_username_check img{
-    
-}
-.df_about_akk_div_img img{
-    width: 100%;
-}
-.df_about_akk_div_img {
-    width: 20vw;
-} */
 
 
 
@@ -456,6 +425,142 @@ text-align: center;
     border-radius: 10px;
     border: 1px solid rgba(218, 218, 218, 0.856);
     margin-top: 20px;
+}
+.buy_prime_game1{
+    border-radius: 10px;
+    border: 1px solid rgba(218, 218, 218, 0.856);
+    margin-top: 20px;
+    display: none;
+}
+@media (max-width:900px) {
+    .buy_prime_game{
+        display: none;
+    }
+    .buy_prime_game1{
+        display: block;
+    }
+    .info_and_price_div{
+        display: block !important;
+    }
+    .button_to_buy_price1{
+        display: block;
+    }
+    .but_number_1{
+        width: 95% !important;
+        margin-left: 2.5%;
+        margin-top: 10px;
+        font-size: 2vw !important;
+    }
+    .but_number_2{
+        width: 95% !important;
+        margin-left: 2.5%;
+        margin-top: 10px; 
+        margin-bottom: 20px;
+        font-size: 2vw !important;
+    }
+    .p_minus_kiladi{
+        margin-left: 15px;
+        font-size: 2vw !important;
+    }
+    .p_plus_kiladi{
+        margin-right: 15px;
+        font-size: 2vw !important;
+    }
+    .number_plus_minus_div_price1{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        border: 1px solid rgba(218, 218, 218, 0.856);
+        border-radius: 15px;
+        height: 50px;
+        font-family: “Euclid”, sans-serif ;
+    }
+    .max-price{
+        font-size: 2vw !important;
+        line-height: 0px;
+        margin-top: 30px !important;
+    }
+    .current-price{
+        font-size: 2vw !important;
+        margin-top: 30px !important;
+    }
+    .text_info_prime h2{
+        font-size: 4vw ;
+    }
+    .text_info_prime span{
+        font-size: 2vw;
+    }
+    .inp_div_checkbox input{
+        height: 20px !important;
+    }
+    .inp_div_checkbox p{
+        font-size: 1.4vw;
+    }
+    .p_chikadi_plus_bosilganda{
+        font-size: 1.5vw !important;
+    }
+    .change_max_price p{
+        font-size: 1.5vw;
+    }
+    .div_for_inp_price{
+        width: 80% !important;
+        margin-left: 5%;
+    }
+    .div_for_inp_price input{
+        font-size: 1.5vw;
+        width: 90% !important;
+        margin-left: 3px;
+        outline: none;
+        border: none;
+        color:#151515 ;
+        font-family: “Euclid”, sans-serif ;
+    }
+    .accordiong_in_media{
+        display: block !important;
+        margin-top: 30px;
+    }
+    .for_top_class1 span{
+        font-size: 2.5vw !important;
+    }
+    .for_top_class span{
+        font-size: 2.5vw !important;
+    }
+    .df_bolib_turishi_uchun{
+        font-size: 2vw;
+        width: 55vw !important;
+        height: 50px;
+
+    }
+    .kotta_acc_div_df{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgb(199, 199, 199);    
+    }
+  .basket_in_acc button{
+    width: 40px !important  ;
+    height: 40px !important;
+  }
+  .df_info_in_acc p {
+font-size: 2vw;
+  }
+  .df_info_in_acc{
+    display: flex;
+    width:  58vw !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .big_div_for_media{
+    margin-top: -70px;
+  }
+}
+.accordiong_in_media{
+    display: none;
 }
 .info_and_price_div{
     margin-left: 20px;
@@ -511,6 +616,11 @@ text-align: center;
     margin-left: 145px;
 }
 
+@media (max-width:1150px) {
+    .number_plus_minus_div_price{
+        width: 13vw !important;
+    }
+}
 .number_plus_minus_div_price{
     margin-top: 20px;
     display: flex;
@@ -593,15 +703,13 @@ text-align: center;
 }
 
 
-
-
-#accordion-resizer {
+ .accordion-resizer {
     padding: 10px;
     width: 100%;
     height: auto;
     border: none;
   }
-  #accordion{
+   .accordion{
     margin-top: 20px;   
   }
 
@@ -686,7 +794,7 @@ text-align: center;
   }
   .df_info_in_acc{
     display: flex;
-    width: 37vw !important;
+    width: 37vw ;
     align-items: center;
     justify-content: space-between;
   }
@@ -797,6 +905,7 @@ text-align: center;
     display: none;
     align-items: center;
     justify-content: center;
+    top: 0;
 }
 
 .user_all_owners{
@@ -884,4 +993,63 @@ text-align: center;
 }
 .items_view{
     margin-right: 15px;
+}
+
+.push_in_favorite{
+    width: 100vw;
+    height: 100vh !important;
+    background-color: #000000dc;
+    position: fixed;
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.alittle_info_about_favorite{
+    font-size: 1.2vw;
+    color: #8a939b;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    font-family: “Euclid”, sans-serif;
+}
+.alittle_info_about_favorite p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.alittle_info_about_favorite span{
+    color: #2081e2;
+}
+
+.df_logo_and_nick img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+.df_logo_and_nick{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4vw;
+    margin-left: 25px;
+}
+.first_example{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.favoriteby{
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.logo_user2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
