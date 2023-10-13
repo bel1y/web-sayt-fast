@@ -345,6 +345,12 @@ width: 8%;
 .df_info_about_think1{
 display: none;
 }
+/* .for_mediya_top_text{
+    width: 27vw;
+} */
+/* .about_things_div{
+    width: ;
+} */
 @media (max-width:900px) {
     .df_icons_and_text1{display: flex; width: 100%;}
     .df_icons_and_text{display: none;}
@@ -1052,4 +1058,68 @@ font-size: 2vw;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+
+.small_traits{
+    width: 10vw;
+    padding: 5px;
+    background-color: #1212120a;
+    text-align: center;
+    border-radius: 5px;
+}
+.small_traits p{
+    color: #646c74;
+    font-size: 1vw;
+}
+.small_traits h3{
+    font-size: 1vw;
+    line-height: 5px;
+}
+.small_traits span{
+    font-size: 1vw;
+    line-height: 5px;
+    color: #8a939b;
+}
+.df_traits1{
+    display: flex;
+    justify-content: space-between;
+}
+.df_traits2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+
+.about_paralel_img{
+    width: 6vw;
+
+}
+.about_paralel_img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about_parallel{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.about_parallel_text{
+    color: #8a939b;
+}
+
+.about_parallel_text span{
+    color: #121212;
+}
+.about_parallel_text p{
+line-height: 5px;
+font-family: “Euclid”, sans-serif;
+}
+
+.accordiong_kotta_div{
+    width: 100%;
 }
