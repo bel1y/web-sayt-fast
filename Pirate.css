@@ -3,7 +3,7 @@ body{
 }
 
 .Img_div_Pirate_Junker{
-    width: 40vw;
+    width: 100%;
     border: 1px solid rgba(218, 218, 218, 0.856);
     border-radius: 10px;
     height: auto;
@@ -249,7 +249,7 @@ width: 8%;
     display: flex;
     align-items: start;
     justify-content: space-between;
-    width: 50vw;
+    width: 100%;
 }
 .df_icons_and_text1{
     display: none;
@@ -345,12 +345,12 @@ width: 8%;
 .df_info_about_think1{
 display: none;
 }
-/* .for_mediya_top_text{
-    width: 27vw;
-} */
-/* .about_things_div{
-    width: ;
-} */
+.for_mediya_top_text{
+    width: 40% ;
+}
+.about_things_div{
+    width: 58%;
+}
 @media (max-width:900px) {
     .df_icons_and_text1{display: flex; width: 100%;}
     .df_icons_and_text{display: none;}
@@ -412,6 +412,9 @@ text-align: center;
 .max-price{
     display: none;
 }
+.max-price1{
+    display: none;
+}
 
 .inp_chang_max_price{
    display: none; 
@@ -428,6 +431,7 @@ text-align: center;
     font-family: “Euclid”, sans-serif
 }
 .buy_prime_game{
+    width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(218, 218, 218, 0.856);
     margin-top: 20px;
@@ -484,7 +488,7 @@ text-align: center;
         height: 50px;
         font-family: “Euclid”, sans-serif ;
     }
-    .max-price{
+    .max-price1{
         font-size: 2vw !important;
         line-height: 0px;
         margin-top: 30px !important;
@@ -508,7 +512,7 @@ text-align: center;
     .p_chikadi_plus_bosilganda{
         font-size: 1.5vw !important;
     }
-    .change_max_price p{
+    .change_max_price1 p{
         font-size: 1.5vw;
     }
     .div_for_inp_price{
@@ -612,6 +616,26 @@ font-size: 2vw;
     position: relative;
     z-index: 999;
 }
+.div_info_about_prime1{
+    width: 25vw;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(199, 199, 199);
+    position: absolute;
+    margin-top: -150px;
+    margin-left:50px;
+    display: none;
+}
+.div_info_about_prime1 p{
+    font-size: 1.3vw;
+    color: #000 !important;
+    margin-left: 15px;
+    margin-right: 15px; 
+    font-family: “Euclid”, sans-serif ;
+    position: relative;
+    z-index: 999;
+}
 .div_info_about_prime_rotate{
     width: 30px;
     height: 30px;
@@ -702,15 +726,30 @@ font-size: 2vw;
     color:#151515 ;
     font-family: “Euclid”, sans-serif ;
 }
+#inp_for_prime1 {
+    font-size: 1.5vw;
+    width: 5vw;
+    margin-left: 3px;
+    outline: none;
+    border: none;
+    color:#151515 ;
+    font-family: “Euclid”, sans-serif ;
+}
 .change_max_price{
+    gap: 5px;
+    align-items: center;
+    display: none;
+}
+.change_max_price1{
     gap: 5px;
     align-items: center;
     display: none;
 }
 
 
+
  .accordion-resizer {
-    padding: 10px;
+    margin-top: 20px;
     width: 100%;
     height: auto;
     border: none;
@@ -757,10 +796,11 @@ font-size: 2vw;
     justify-content: center;
   }
   .accordionside1{
-    min-height: 300px !important;
+    min-height: 400px !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px !important;
   }
   .if_no_offers{
     text-align: center;
@@ -776,6 +816,13 @@ font-size: 2vw;
     justify-content: space-between !important;
     width: 35vw;
 }
+.df_bolib_turishi_uchun p{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.unit-price{
+    
+}
   .kichik_nav_in_acc{
     
     width: 100% !important;
@@ -786,8 +833,10 @@ font-size: 2vw;
     z-index: 9999;
     background-color: #fff;
       border-bottom: 1px solid rgb(199, 199, 199);
-      margin-bottom: 80px;
+      margin-bottom: 100px;
+      text-align: center;
   }
+  
   .div_position_fixed hr{
     background-color: #d8d8d8;
     border: none;
@@ -803,6 +852,7 @@ font-size: 2vw;
     width: 37vw ;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
   }
   .text_in_acc{
         font-weight: 600 ;
@@ -827,6 +877,9 @@ font-size: 2vw;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid rgb(199, 199, 199);
+}
+.basket_in_acc{
+    margin-right: 10px;
 }
 .basket_in_acc button{
     color: #fff;
@@ -1092,7 +1145,10 @@ font-size: 2vw;
 }
 
 
-
+.div_traits{
+    padding: 10px !important;
+    height: auto !important;
+}
 
 .about_paralel_img{
     width: 6vw;
@@ -1110,6 +1166,7 @@ font-size: 2vw;
 
 .about_parallel_text{
     color: #8a939b;
+    font-size: 1vw;
 }
 
 .about_parallel_text span{
@@ -1121,5 +1178,77 @@ font-family: “Euclid”, sans-serif;
 }
 
 .accordiong_kotta_div{
-    width: 100%;
+    width: 100% ;
+}
+.accordiong_kotta_div1{
+    margin-top: 10px;
+    border: none;
+}
+.accordion-resizer{
+    border: none !important;
+}
+
+.inet_icon_about{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;   
+}
+
+.icon_inet, .icon_inet1{
+    height: 50px;
+    width: 40px;
+    background-color: #1212120a;
+    border-right: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a939b;
+}
+
+.icon_inet2{
+    height: 50px;
+    width: 40px;
+    background-color: #1212120a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a939b;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.icon_inet1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.details_div{
+    padding: 10px !important;
+    height: auto !important;
+}
+.about_parallel_alpha_div{
+    height: auto !important;
+}
+.df_details{
+    display: flex;
+    width: 98%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #646c74;
+    font-size: 1.2vw;
+    line-height: 3px;
+}
+
+.for_color_blue{
+    color: #2081e2;
+}
+.accordion_diagramma{
+    height: auto !important;
+}
+
+
+
+.accordion_item_activity{
+    width: 96%;
+    margin: auto;
 }
