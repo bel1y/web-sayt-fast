@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
-<body>
+<body >
     <div class="view_all_owners">
         <div class="user_all_owners">
             <div class="otmenit_owners">
@@ -234,6 +234,49 @@
         </div>
      </div>
 
+     <div class="view_share">
+        <div class="kichik_view_share">
+            <div class="otmenit_share">
+                <p>Share</p>
+                <i class="fa-solid fa-xmark" onclick="closeShare()"></i>
+            </div>
+            <div class="where_share">
+                <div class="copy_link">
+                    <img src="https://opensea.io/static/images/logos/opensea-logo.svg" alt="">
+                    <p>Copy link</p>
+                </div>
+                <div class="share_on_twich">
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>share on twitter</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="view_more">
+        <div class="kichik_view_share">
+            <div class="otmenit_share">
+                <p>More</p>
+                <i class="fa-solid fa-xmark" onclick="closeMore()"></i>
+            </div>
+            <div class="where_share">
+                <div class="refresh_metadata">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <p>Refresh metadata</p>
+                </div>
+                <div class="мiew_website">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>View website</p>
+                </div>
+                <div class="Report">
+                    <i class="fa-regular fa-flag"></i>
+                    <p>Report</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
     <div class="Pirate_big_div">
 
         <div class="for_mediya_top_text">
@@ -251,10 +294,10 @@
                    <i class="fa-regular fa-handshake"></i>
                  </p>  
                  <p >
-                   <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                   <i onclick="openShare()" class="fa-solid fa-arrow-up-from-bracket"></i>
                  </p>
                    <p>
-                       <i class="fa-solid fa-ellipsis"></i>
+                       <i onclick="openMore()" class="fa-solid fa-ellipsis"></i>
                    </p>
                    
                </div>   
@@ -294,7 +337,7 @@
         </div>
     </div>  
     <div class="df_info_about_think1">
-        <div class="icon_div">
+        <div onclick="ViewAllOwners()" class="icon_div">
             <i class="fa-solid fa-person"></i>
              <p>573 owners</p>
             </div>
@@ -308,7 +351,7 @@
                 <p>5.9K views</p>
                
                </div>
-               <div class="icon_div">
+               <div onclick="OpenFavourite()" class="icon_div">
                 <i class="fa-regular fa-heart"></i>
                 <p> 67 favorites</p>
                </div>
@@ -322,17 +365,14 @@
             <div class="text_info_prime">
                 <p class="max-price1">Max price </p>
                 <p class="current-price1">Current price </p> 
-                <h2 class="inp_chang_max_price">1,5 PRIME <span>$5,21</span></h2>
-                <h2 class="inp_chang_current_price">0,15 PRIME <span>$0,42</span></h2>
+                <h2 class="inp_chang_max_price1">1,5 PRIME <span>$5,21</span></h2>
+                <h2 class="inp_chang_current_price1">0,15 PRIME <span>$0,42</span></h2>
                
-                <p class="p_chikadi_plus_bosilganda">Average item price: 0,15 PRIME</p>
+                <p class="p_chikadi_plus_bosilganda1">Average item price: 0,15 PRIME</p>
               <div class="inp_div_checkbox">
-                 <input type="checkbox" id="checkbox" onchange="inpchange()" > 
+                 <input type="checkbox" id="checkbox" onchange="inpchange2()" > 
                  <p>Substitute listings</p>
                  <p>
-                    <div class="div_info_about_prime1">
-                            <p >Unavailable listings will be substituted with the next cheapest listings below your specified max price.</p>
-                    </div>
                    <i onmouseenter="OpenInfoAboutPrice2()" onmouseleave="CloseInfoAboutPrice2()" class="fa-regular fa-circle-question"></i> 
                  </p>
                  
@@ -341,7 +381,7 @@
                 <p>Max price per listing</p>
                 <div class="div_for_inp_price">
                <input  type="text" name="" id="inp_for_prime1">    
-               PRIME 
+               <p>PRIME </p> 
                 </div>
                 
               </div>
@@ -349,7 +389,7 @@
             <div class="number_plus_minus_div_price1">
                 <p class="p_minus_kiladi"><i class="fa-solid fa-minus"></i></p>
                 <p class="p_obsh_kiladi">1</p>
-                <p class="p_plus_kiladi" ><i onclick="OpenWhenPOnclick()" class="fa-solid fa-plus"></i></p>
+                <p class="p_plus_kiladi" ><i onclick="OpenWhenPOnclick2()" class="fa-solid fa-plus"></i></p>
             </div>
         </div>
         <div class="button_to_buy_price1">
@@ -366,7 +406,7 @@
              </span><span>
                  <i class="fa-solid fa-chevron-down"></i>
              </span></h3>
-             <div>
+             <div class="diagramma_acc">
                  <canvas id="MyChart2"></canvas>
              </div>
              <h3 class="for_top_class"><span>
@@ -376,77 +416,113 @@
               <div class="div_position_fixed">
          
          
-                 <div class="kichik_nav_in_acc">
-                     <div class="df_bolib_turishi_uchun">
-                          <p>Unit Price</p>
-                 <p>USD Unit Price</p>
-                 <p>Quantity</p>
-                 <p>Expiration</p>
-                 <p>From</p> 
+                 <div class="kichik_nav_in_acc2">
+                     <div class="df_bolib_turishi_uchun1">
+                <p class="nav_in_acc_madia">Unit Price</p>
+                 <p class="nav_in_acc_madia1">USD Unit Price</p>
+                 <p class="nav_in_acc_madia2">Quantity</p>
+                 <p class="nav_in_acc_madia3">Expiration</p>
+                 <p class="nav_in_acc_madia4">From</p> 
                      </div>
                 
                  </div>
                  <div class="big_div_for_media">
                    <div class="kotta_acc_div_df">
-                  <div class="df_info_in_acc">
-                 <p class="text_in_acc">0,144 PRIME</p>
-                 <p class="text_in_acc1">$0,50</p>
-                 <p class="text_in_acc2">7</p>
-                 <p class="text_in_acc3">in 6 days</p>
-                 <p class="text_in_acc4">816375</p>
+                  <div class="df_info_in_acc1">
+                 <p class="text_in_acc_media">0,144 PRIME</p>
+                 <p class="text_in_acc_media1">$0,50</p>
+                 <p class="text_in_acc_media2">7</p>
+                 <p class="text_in_acc_media3">in 6 days</p>
+                 <p class="text_in_acc_media4">816375</p>
              </div>
-             <div class="basket_in_acc">
+             <div class="basket_in_acc1">
                  <button><i class="fa-solid fa-cart-shopping"></i></button>
              </div>
                 </div>
                 <div class="kotta_acc_div_df">
-                 <div class="df_info_in_acc">
-                <p class="text_in_acc">0,144 PRIME</p>
-                <p class="text_in_acc1">$0,50</p>
-                <p class="text_in_acc2">7</p>
-                <p class="text_in_acc3">in 6 days</p>
-                <p class="text_in_acc4">816375</p>
+                 <div class="df_info_in_acc1">
+                <p class="text_in_acc_media">0,144 PRIME</p>
+                <p class="text_in_acc_media1">$0,50</p>
+                <p class="text_in_acc_media2">7</p>
+                <p class="text_in_acc_media3">in 6 days</p>
+                <p class="text_in_acc_media4">816375</p>
             </div>
-            <div class="basket_in_acc">
+            <div class="basket_in_acc1">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
                </div>
                <div class="kotta_acc_div_df">
-                 <div class="df_info_in_acc">
-                <p class="text_in_acc">0,144 PRIME</p>
-                <p class="text_in_acc1">$0,50</p>
-                <p class="text_in_acc2">7</p>
-                <p class="text_in_acc3">in 6 days</p>
-                <p class="text_in_acc4">816375</p>
+                 <div class="df_info_in_acc1">
+                <p class="text_in_acc_media">0,144 PRIME</p>
+                <p class="text_in_acc_media1">$0,50</p>
+                <p class="text_in_acc_media2">7</p>
+                <p class="text_in_acc_media3">in 6 days</p>
+                <p class="text_in_acc_media4">816375</p>
             </div>
-            <div class="basket_in_acc">
+            <div class="basket_in_acc1">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
                </div>
                <div class="kotta_acc_div_df">
-                 <div class="df_info_in_acc">
-                <p class="text_in_acc">0,144 PRIME</p>
-                <p class="text_in_acc1">$0,50</p>
-                <p class="text_in_acc2">7</p>
-                <p class="text_in_acc3">in 6 days</p>
-                <p class="text_in_acc4">816375</p>
+                 <div class="df_info_in_acc1">
+                <p class="text_in_acc_media">0,144 PRIME</p>
+                <p class="text_in_acc_media1">$0,50</p>
+                <p class="text_in_acc_media2">7</p>
+                <p class="text_in_acc_media3">in 6 days</p>
+                <p class="text_in_acc_media4">816375</p>
             </div>
-            <div class="basket_in_acc">
+            <div class="basket_in_acc1">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
                </div>
                <div class="kotta_acc_div_df">
-                 <div class="df_info_in_acc">
-                <p class="text_in_acc">0,144 PRIME</p>
-                <p class="text_in_acc1">$0,50</p>
-                <p class="text_in_acc2">7</p>
-                <p class="text_in_acc3">in 6 days</p>
-                <p class="text_in_acc4">816375</p>
+                 <div class="df_info_in_acc1">
+                <p class="text_in_acc_media">0,144 PRIME</p>
+                <p class="text_in_acc_media1">$0,50</p>
+                <p class="text_in_acc_media2">7</p>
+                <p class="text_in_acc_media3">in 6 days</p>
+                <p class="text_in_acc_media4">816375</p>
             </div>
-            <div class="basket_in_acc">
+            <div class="basket_in_acc1">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
                </div> 
+               <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc1">
+               <p class="text_in_acc_media">0,144 PRIME</p>
+               <p class="text_in_acc_media1">$0,50</p>
+               <p class="text_in_acc_media2">7</p>
+               <p class="text_in_acc_media3">in 6 days</p>
+               <p class="text_in_acc_media4">816375</p>
+           </div>
+           <div class="basket_in_acc1">
+               <button><i class="fa-solid fa-cart-shopping"></i></button>
+           </div>
+              </div> 
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc1">
+               <p class="text_in_acc_media">0,144 PRIME</p>
+               <p class="text_in_acc_media1">$0,50</p>
+               <p class="text_in_acc_media2">7</p>
+               <p class="text_in_acc_media3">in 6 days</p>
+               <p class="text_in_acc_media4">816375</p>
+           </div>
+           <div class="basket_in_acc1">
+               <button><i class="fa-solid fa-cart-shopping"></i></button>
+           </div>
+              </div> 
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc1">
+               <p class="text_in_acc_media">0,144 PRIME</p>
+               <p class="text_in_acc_media1">$0,50</p>
+               <p class="text_in_acc_media2">7</p>
+               <p class="text_in_acc_media3">in 6 days</p>
+               <p class="text_in_acc_media4">816375</p>
+           </div>
+           <div class="basket_in_acc1">
+               <button><i class="fa-solid fa-cart-shopping"></i></button>
+           </div>
+              </div> 
                  </div>
                 
               </div>
@@ -512,14 +588,13 @@
                 <h3>Universal</h3>
                 <span>Floor: 0,15 PRIME</span>
             </div>
-        </div>
-        <div class="df_traits2">
-            <div class="small_traits">
+             <div class="small_traits" style="margin-top: 20px;">
                 <p>RARITY</p>
-                <h3>COmmon</h3>
+                <h3>Common</h3>
                 <span>Floor: 0,13 PRIME</span>
-            </div>  
+            </div> 
         </div>
+            
     </div>
 </div>
 <h3 class="for_top_class"><span>
@@ -531,8 +606,10 @@
         <img src="https://i.seadn.io/gae/Nnp8Pdo6EidK7eBduGnAn_JBvFsYGhNGMJ_fHJ_mzGMN_2Khu5snL5zmiUMcSsIqtANh19KqxXDs0iNq_aYbKC5smO3hiCSw9PlL?auto=format&dpr=1&w=128" alt="">
     </div>
     <div class="about_parallel_text">
-        <p>Sci-fi collectable card game with NFTs.</p>
-        <p>Category <span>Gaming        </span></p>
+        <p>Sci-fi collectable card game with NFTs. <br>
+            Category <span>Gaming        </span>
+        </p>
+        
     </div>
 
 </div>
@@ -614,11 +691,11 @@
           </p>  
           <p  >
             <div class="share_info_div"><p>Share</p><div class="div_ratate_share"></div></div>
-            <i onmouseleave="viewClose10()" onmouseenter="viewOpen10()" class="fa-solid fa-arrow-up-from-bracket"></i>
+            <i onclick="openShare()" onmouseleave="viewClose10()" onmouseenter="viewOpen10()" class="fa-solid fa-arrow-up-from-bracket"></i>
           </p>
             <p>
               <div class="more_info_div"><p>More</p><div class="div_rotate_more"></div></div>
-                <i onmouseenter="viewOpen11()" onmouseleave="viewClose11()" class="fa-solid fa-ellipsis"></i>
+                <i onclick="openMore()" onmouseenter="viewOpen11()" onmouseleave="viewClose11()" class="fa-solid fa-ellipsis"></i>
             </p>
             
         </div>   
@@ -717,7 +794,7 @@
 
         <div class="kichik_nav_in_acc">
             <div class="df_bolib_turishi_uchun">
-                 <p class="unit-price">Unit Price</p>
+        <p>Unit Price</p>
         <p>USD Unit Price</p>
         <p>Quantity</p>
         <p>Expiration</p>
@@ -837,74 +914,267 @@
     <div id="accordion" class="accordion">
     <h3 class="for_top_class1"><span>
         <i class="fa-solid fa-arrows-up-down"></i> Item Activity 
-    </span><span>
+    </span><span>               
      <i class="fa-solid fa-chevron-down"></i>
     </span></h3>
-    <div class="div_traits">
+    <div class="div_item_activity">
+        <div onclick="openFilter()" class="filter_activity">
+            <!-- <div class="filter_activity_kotta_div" onclick="closeFilter()"> -->
+                <p >Filter</p>
+                <span><i class="fa-solid fa-chevron-down fa-chevron-down2"></i></span>
+            <!-- </div> -->
+           
+      
+            <div class="filter_onclick_page">
+                <div class="Sales1" onclick="closeFilter()"><p>Sales</p></div>
+                <div class="Sales" onclick="closeFilter()"><p>Deals accepted</p></div>
+                <div class="Sales" onclick="closeFilter()"><p>Listings</p></div>
+                <div class="Sales" onclick="closeFilter()"><p>Offers</p></div>
+                <div class="Sales" onclick="closeFilter()"><p>Deal offers</p></div>
+                <div class="Sales2" onclick="closeFilter()"><p>Transfers</p></div>
+        </div>
+        </div>
         <div class="big_accordion_item">
+            <div class="div_position_fixed1">
 
+
+                <div class="kichik_nav_in_acc1">
+                    <div class="df_bolib_turishi_uchun1">
+                <p class="Event">Event</p>
+                <p class="unit-price">Unit Price</p>
+                <p class="Quantity">Quantity</p>
+                <p class="From">From</p> 
+                <p class="To">To</p>
+                <p class="Date">Date</p>
+                    </div>
+               
+                </div>
+               <div class="kotta_acc_div_df1">
+                 <div class="df_info_in_acc3">
+                <p class="text_item_activity">Transfer</p>
+                <p class="text_item_activity1">$0,50</p>
+                <p class="text_item_activity2">7</p>
+                <p class="text_item_activity3">4796D0</p>
+                <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate()" onmouseleave="closeInfoDate()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+            </div>
+               </div>
+               <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity6" onmouseenter="openInfoDate2()" onmouseleave="closeInfoDate2()">2d ago
+                <div class="infa_when_finish2">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate3()" onmouseleave="closeInfoDate3()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish3">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+               <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity6" onmouseenter="openInfoDate4()" onmouseleave="closeInfoDate4()">2d ago
+                <div class="infa_when_finish4">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate5()" onmouseleave="closeInfoDate5()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish5">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+               <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity6" onmouseenter="openInfoDate6()" onmouseleave="closeInfoDate6()">2d ago
+                <div class="infa_when_finish6">
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate7()" onmouseleave="closeInfoDate7()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish7"> 
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate7()" onmouseleave="closeInfoDate7()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish7"> 
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate7()" onmouseleave="closeInfoDate7()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish7"> 
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+              <div class="kotta_acc_div_df">
+                <div class="df_info_in_acc3">
+               <p class="text_item_activity">Transfer</p>
+               <p class="text_item_activity1">$0,50</p>
+               <p class="text_item_activity2">7</p>
+               <p class="text_item_activity3">4796D0</p>
+               <p class="text_item_activity4">223460</p>
+               <p class="text_item_activity5" onmouseenter="openInfoDate7()" onmouseleave="closeInfoDate7()">1d ago <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="infa_when_finish7"> 
+                    October 17, 2023 at 1:50 AM
+                </div>
+               </p>
+
+           </div>
+              </div>
+           
+             </div>
         </div>
     </div>
     <h3 class="for_top_class"><span>
-        <i class="fa-regular fa-address-card"></i> About Parallel Alpha
+        <i class="fa-solid fa-grip"></i> More From This Collection
     </span> <span><i class="fa-solid fa-chevron-down"></i></span></h3>
-    <div class="about_parallel_alpha_div">
-    <div class="about_parallel">
-        <div class="about_paralel_img">
-            <img src="https://i.seadn.io/gae/Nnp8Pdo6EidK7eBduGnAn_JBvFsYGhNGMJ_fHJ_mzGMN_2Khu5snL5zmiUMcSsIqtANh19KqxXDs0iNq_aYbKC5smO3hiCSw9PlL?auto=format&dpr=1&w=128" alt="">
-        </div>
-        <div class="about_parallel_text">
-            <p>Sci-fi collectable card game with NFTs.</p>
-            <p>Category <span>Gaming        </span></p>
-        </div>
-    
-    </div>
-    <div class="inet_icon_about">
-        <div class="icon_inet1"><i class="fa-solid fa-globe"></i></div>
-        <div class="icon_inet"><i class="fa-brands fa-discord"></i></div>
-        <div class="icon_inet"><i class="fa-brands fa-instagram"></i></div>
-        <div class="icon_inet"><i class="fa-brands fa-twitter"></i></div>
-        <div class="icon_inet2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-    </div>
-    </div>
-    <h3 class="for_top_class">
-     <span>
-        <i class="fa-solid fa-list-ul"></i> Details 
-     </span> <span>
-         <i class="fa-solid fa-chevron-down"></i>
-     </span></h3>
-    <div class="details_div">
-    <div class="df_details">
-        <p>Contract Address</p>
-        <span class="for_color_blue">0x76be...8e77</span>
-    </div>
-    <div class="df_details">
-        <p>Token ID</p>
-        <span class="for_color_blue">10844</span>
-    </div>
-    <div class="df_details">
-        <p>Token Standard</p>
-        <span>ERC-1155</span>
-    </div>
-    <div class="df_details">
-        <p>Chain</p>
-        <span>Ethereum</span>
-    </div>
-    <div class="df_details">
-        <p>Last Updated</p>
-        <span>5 days ago</span>
-    </div>
-    <div class="df_details">
-        <p>Creator Earnings </p>
-        <span>10%</span>
-    </div>
+    <div class="more_from_this_collection_div">
+
+
     </div>
     </div>
     </div> 
      </div>
 
 
+
+     <script>
+        function openShare() {
+            document.querySelector(".view_share").style="display:flex"
+        }
+        function closeShare() {
+            document.querySelector(".view_share").style="display:none"
+        }
+        function openMore() {
+            document.querySelector(".view_more").style="display:flex"
+        }
+        function closeMore() {
+            document.querySelector(".view_more").style="display:none"
+        }
+
+                function openInfoDate() {
+            document.querySelector(".infa_when_finish").style="display:flex"
+        }
+        function closeInfoDate() {
+            document.querySelector(".infa_when_finish").style="display:none"
+        }
+        function openInfoDate2() {
+            document.querySelector(".infa_when_finish2").style="display:flex"
+        }
+        function closeInfoDate2() {
+            document.querySelector(".infa_when_finish2").style="display:none"
+        }
+        function openInfoDate3() {
+            document.querySelector(".infa_when_finish3").style="display:flex"
+        }
+        function closeInfoDate3() {
+            document.querySelector(".infa_when_finish3").style="display:none"
+        }
+        function openInfoDate4() {
+            document.querySelector(".infa_when_finish4").style="display:flex"
+        }
+        function closeInfoDate4() {
+            document.querySelector(".infa_when_finish4").style="display:none"
+        }
+        function openInfoDate5() {
+            document.querySelector(".infa_when_finish5").style="display:flex"
+        }
+        function closeInfoDate5() {
+            document.querySelector(".infa_when_finish5").style="display:none"
+        }
+        function openInfoDate6() {
+            document.querySelector(".infa_when_finish6").style="display:flex"
+        }
+        function closeInfoDate6() {
+            document.querySelector(".infa_when_finish6").style="display:none"
+        }
+        function openInfoDate7() {
+            document.querySelector(".infa_when_finish7").style="display:flex"
+        }
+        function closeInfoDate7() {
+            document.querySelector(".infa_when_finish7").style="display:none"
+        }
+     </script>
     <script>
+
         function ViewAllOwners() {
             document.querySelector(".view_all_owners").style="display: flex"
         }
@@ -985,6 +1255,15 @@
     </script>
 
     <script>
+        function openFilter() {
+      document.querySelector(".filter_onclick_page").style = "display:block ";
+    
+        }
+        function closeFilter() {
+      document.querySelector(".filter_onclick_page").style = "display:none ";
+    
+        }
+
 
         function inpchange() {
             document.querySelector(".max-price").style="display:block"
@@ -997,15 +1276,26 @@
 
             document.querySelector("#inp_for_prime").value="1.5"
         }
+        function inpchange2() {
+            document.querySelector(".max-price1").style="display:block"
+            document.querySelector(".inp_chang_max_price1").style="display:block"
+            document.querySelector(".inp_chang_current_price1").style="display:none"
+            document.querySelector(".current-price1").style="display:none"
+            document.querySelector(".change_max_price1").style="    display: flex;"
 
+            document.querySelector("#inp_for_prime1").value="1.5"
+        }
 
+        
         function OpenWhenPOnclick() {
-            document.querySelector(".p_chikadi_plus_bosilganda").style="display: block; margin-top: -15px "
+            document.querySelector(".p_chikadi_plus_bosilganda").style="display: block; margin-top: -10px "
             document.querySelector(".inp_div_checkbox").style="margin-top: 0px"
         }
-        function CloseWhenPOnclick() {
-            document.querySelector(".p_chikadi_plus_bosilganda").style="display:none"
+        function OpenWhenPOnclick2() {
+            document.querySelector(".p_chikadi_plus_bosilganda1").style="display: block; margin-top: -10px "
+            document.querySelector(".inp_div_checkbox").style="margin-top: 0px"
         }
+        
 
 
 
