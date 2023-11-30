@@ -2547,23 +2547,20 @@ font-family: “Euclid”, sans-serif;
 
 
   .view_share{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000dc;
-    position: fixed;
-    z-index: 99999;
-  }
-.kichik_view_share{
-    width: 50%;
+    position: absolute;
+    width: 200px;
+    height: 100px;
     background-color: #fff;
+    right: 85px;
+    top: 90px !important; 
     top: 0;
+    z-index: 99999;
+    box-shadow: 0 0 10px #545454;
     border-radius: 10px;
-    padding: 10px;
-}
+    overflow: hidden;
+    display: none;
+    padding: 5px 0px;
+  }
   .copy_link img{
     width: 30px;
     margin-left: 30px;
@@ -2573,33 +2570,29 @@ font-family: “Euclid”, sans-serif;
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 95%;
-    height: 60px;
-    margin: auto;
     font-family: “Euclid”, sans-serif;
-    border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
 }
 
 .copy_link:hover{
-background-color: #d8d8d8;
+background-color: #f7f7f7;
 }
 
 .share_on_twich{
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 95%;
-    height: 60px;
-    margin: auto;
     font-family: “Euclid”, sans-serif;
-    border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
 }
 .share_on_twich:hover{
-    background-color: #d8d8d8;
+    background-color: #f7f7f7;
 }
 .share_on_twich i{
     font-size: 28px;
@@ -2648,31 +2641,33 @@ background-color: #d8d8d8;
 
 
 .view_more{
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    right: 45px;
+    top: 90px !important; 
     top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000dc;
-    position: fixed;
     z-index: 99999;
+    box-shadow: 0 0 10px #545454;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    padding: 5px 0px;
   }
 
   .refresh_metadata{
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 95%;
-    height: 60px;
-    margin: auto;
     font-family: “Euclid”, sans-serif;
-    border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
   }
   .refresh_metadata:hover{
-    background-color: #d8d8d8;
+    background-color: #f7f7f7;
   }
   .refresh_metadata i{
     margin-left: 20px;
@@ -2681,16 +2676,14 @@ background-color: #d8d8d8;
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 95%;
-    height: 60px;
-    margin: auto;
     font-family: “Euclid”, sans-serif;
-    border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
   }
   .мiew_website:hover{
-    background-color: #d8d8d8;
+    background-color: #f7f7f7;
   }
   .мiew_website i{
     margin-left: 20px;
@@ -2699,17 +2692,14 @@ background-color: #d8d8d8;
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 95%;
-    height: 60px;
-    margin: auto;
     font-family: “Euclid”, sans-serif;
-    border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
-    font-size: 2vw;
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
   }
   .Report:hover{
-    background-color: #d8d8d8;
+    background-color: #f7f7f7;
   }
   .Report i{
     margin-left: 20px;
