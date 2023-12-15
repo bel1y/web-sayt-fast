@@ -369,7 +369,7 @@
                  <i class="fa-solid fa-chevron-down"></i>
              </span></h3>
              <div class="diagramma_acc">
-                 <canvas id="MyChart2"></canvas>
+                <!-- Для статистики  -->
              </div>
              <h3 class="for_top_class"><span>
                  <i class="fa-solid fa-tag"></i> Listings
@@ -756,7 +756,7 @@
         <i class="fa-solid fa-chevron-down"></i>
     </span></h3>
     <div class="accordion_diagramma">
-        <canvas id="MyChart"></canvas>
+        <!-- Для статистики  -->
     </div>
     <h3 class="for_top_class"><span>
         <i class="fa-solid fa-tag"></i> Listings
@@ -1298,52 +1298,9 @@
     </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    let ctx = document.querySelector("#MyChart").getContext('2d');
-    let myChart = new Chart(ctx, {
-        type: "line",
-        data: {
-            labels: ["Oct 22", "Jan 23", "Apr 23", "Jul 23", "Oct 23"],
-            datasets: [{
-                label: "", 
-                data: [0,0.32,0.16, 0.20, 0.02],
-                backgroundColor: [
-                    "white"
-                ], 
-                borderColor: [
-                "#07c7f7",
-                ],
-                borderWidth: 4,
-            }],
-        },
-        option: {}
-    })
 
-</script>
 
-<script>
-    let ctx2 = document.querySelector("#MyChart2").getContext('2d');
-    let myChart2 = new Chart(ctx2, {
-        type: "line",
-        data: {
-            labels: ["Oct 22", "Jan 23", "Apr 23", "Jul 23", "Oct 23"],
-            datasets: [{
-                label: "", 
-                data: [0,0.32,0.16, 0.20, 0.02],
-                backgroundColor: [
-                    "white"
-                ], 
-                borderColor: [
-                "#07c7f7",
-                ],
-                borderWidth: 4,
-            }],
-        },
-        option: {}
-    })
 
-</script>
 
 <!-- jquery -->
 

@@ -531,12 +531,6 @@ text-align: center;
     height: auto !important;
 }
 
-@media (max-width: 900px) {
-    #MyChart2{
-        width: 100% !important;
-        height: auto !important;
-    }
-}
 @media (max-width:600px) {
     .p_chikadi_plus_bosilganda1{
         font-size: 2.5vw !important; 
@@ -1186,10 +1180,6 @@ font-size: 1.5vw;
 }
 
 
-#MyChart{
-    width: 45vw !important;
-    height: 300px !important;
-}
 
 .view_all_owners{
     width: 100vw;
@@ -2802,4 +2792,12 @@ background-color: #f7f7f7;
       .Sales2 p, .Sales1 p, .Sales p{
         font-size: 4vw !important;
       }
+  }
+
+
+
+
+
+  .ui-resizable-handle, .ui-resizable-se, .ui-icon, .ui-icon-gripsmall-diagonal-se{
+    display: none !important;
   }
